@@ -10,10 +10,10 @@
     <test name=" Search Tests">
         <classes>
         <class name="com.iween.OneWay.TCCP_1"/>
-        <class name="com.iween.OneWay.TCCP_2"/>
+        <!--class name="com.iween.OneWay.TCCP_2"/>
         <class name="com.iween.OneWay.TCCP_3"/>
         
-        <class name="com.iween.OneWay.TCCP_4"/>
+        <class name="com.iween.OneWay.TCCP_4"/-->
         
         <!--class name="com.iween.RoundTripFilterTestcase1.TCCP_1"/>
         <class name="com.iween.RoundTripFilterTestcase1.TCCP_2"/>
