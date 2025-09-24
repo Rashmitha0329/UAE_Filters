@@ -17872,3 +17872,15 @@ Session ID: 32e2ed749c096d5ae6f0dff8d3757a5e
 2025-09-24 18:29:35 [TestNG-test- Search Tests-1] INFO  com.iween.OneWay.TCCP_1 - Execution environment: machine | OS: Windows | Browser: chrome
 2025-09-24 18:29:38 [TestNG-test- Search Tests-1] INFO  com.iween.OneWay.TCCP_1 - Launched URL: https://uaev2.skytravellers.com/login
 2025-09-24 18:29:38 [TestNG-test- Search Tests-1] INFO  com.iween.OneWay.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-09-24 18:36:36 [TestNG-test- Search Tests-1] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-09-24 18:36:36 [TestNG-test- Search Tests-1] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-09-24 18:36:36 [TestNG-test- Search Tests-1] INFO  com.iween.OneWay.TCCP_1 - Loaded config.properties file successfully.
+2025-09-24 18:36:36 [TestNG-test- Search Tests-1] INFO  com.iween.OneWay.TCCP_1 - Execution environment: machine | OS: Windows | Browser: chrome
+2025-09-24 18:36:39 [TestNG-test- Search Tests-1] INFO  com.iween.OneWay.TCCP_1 - Launched URL: https://uaev2.skytravellers.com/login
+2025-09-24 18:36:39 [TestNG-test- Search Tests-1] INFO  com.iween.OneWay.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-09-24 18:37:45 [TestNG-test- Search Tests-1] INFO  com.iween.OneWay.TCCP_1 - Closing browser.
+2025-09-24 18:37:45 [TestNG-test- Search Tests-1] INFO  com.iween.OneWay.TCCP_1 - Loaded config.properties file successfully.
+2025-09-24 18:37:45 [TestNG-test- Search Tests-1] INFO  com.iween.OneWay.TCCP_1 - Execution environment: machine | OS: Windows | Browser: chrome
+2025-09-24 18:37:48 [TestNG-test- Search Tests-1] INFO  com.iween.OneWay.TCCP_1 - Launched URL: https://uaev2.skytravellers.com/login
+2025-09-24 18:37:48 [TestNG-test- Search Tests-1] INFO  com.iween.OneWay.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-09-24 18:39:59 [TestNG-test- Search Tests-1] INFO  com.iween.OneWay.TCCP_1 - Closing browser.

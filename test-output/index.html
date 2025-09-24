@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-iween_Test_Suite" class="navigator-link">
-              <span class="suite-name border-skipped">iween Test Suite</span>
+              <span class="suite-name border-failed">iween Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  2 skipped,  </span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-iween_Test_Suite" class="hide-methods skipped suite-iween_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-iween_Test_Suite -->
-                      <a href="#" panel-name="suite-iween_Test_Suite" class="show-methods skipped suite-iween_Test_Suite"> (show)</a> <!-- show-methods skipped suite-iween_Test_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-iween_Test_Suite" class="hide-methods failed suite-iween_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-iween_Test_Suite -->
+                      <a href="#" panel-name="suite-iween_Test_Suite" class="show-methods failed suite-iween_Test_Suite"> (show)</a> <!-- show-methods failed suite-iween_Test_Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-iween_Test_Suite">
+                    <div class="method-list-content failed suite-iween_Test_Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-iween_Test_Suite" title="com.iween.OneWay.TCCP_1" class="method navigator-link" hash-for-method="myTest({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUEs,ECONOMY CONVENIENCEs,...)">myTest({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUEs,ECONOMY CONVENIENCEs,...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-iween_Test_Suite" title="com.iween.OneWay.TCCP_1" class="method navigator-link" hash-for-method="myTest({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUE,ECONOMY CONVENIENCE, a...)">myTest({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUE,ECONOMY CONVENIENCE, a...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-iween_Test_Suite -->
+                    </div> <!-- method-list-content failed suite-iween_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-iween_Test_Suite" class="hide-methods passed suite-iween_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-iween_Test_Suite -->
+                      <a href="#" panel-name="suite-iween_Test_Suite" class="show-methods passed suite-iween_Test_Suite"> (show)</a> <!-- show-methods passed suite-iween_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-iween_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-iween_Test_Suite" title="com.iween.OneWay.TCCP_1" class="method navigator-link" hash-for-method="myTest({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUEs,ECONOMY CONVENIENCEs,...)">myTest({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUEs,ECONOMY CONVENIENCEs,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-iween_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,9 +132,35 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-iween_Test_Suite" class="panel iween_Test_Suite">
-          <div class="suite-iween_Test_Suite-class-skipped">
+          <div class="suite-iween_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">com.iween.OneWay.TCCP_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="myTest({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUE,ECONOMY CONVENIENCE, a...)">
+                  </a> <!-- myTest({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUE,ECONOMY CONVENIENCE, a...) -->
+                  <span class="method-name">myTest</span>
+                  <span class="parameters">({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUE,ECONOMY CONVENIENCE, airLine=Air India,Qatar Airways, Depart From=SIN, Going To=DXB, InfantsCount=1, ArrivalFilter=00 -06,18-00, DepartureFilter=00 -06,18-00, Stops=1 Stop,2 stops, SKIP=, Class=Economy, ChildrenCount=1})</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at com.skytraveller.pageObjects1.ResultPage.validateResultPage1(ResultPage.java:407)
+	at com.iween.OneWay.TCCP_1.myTest(TCCP_1.java:122)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-iween_Test_Suite-class-failed -->
+          <div class="suite-iween_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.iween.OneWay.TCCP_1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -135,38 +170,10 @@
                   </a> <!-- myTest({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUEs,ECONOMY CONVENIENCEs,...) -->
                   <span class="method-name">myTest</span>
                   <span class="parameters">({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUEs,ECONOMY CONVENIENCEs, airLine=Air Indias,Qatar Airwayss, Depart From=SIN, Going To=DXB, InfantsCount=1, ArrivalFilter=00 -06,18-00, DepartureFilter=00 -06,18-00, Stops=1 Stop,2 stops, SKIP=, Class=Economy, ChildrenCount=1})</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: Missing required property: execution_env
-	at com.iween.testBase.baseClass.getRequiredProperty(baseClass.java:98)
-	at com.iween.testBase.baseClass.setup(baseClass.java:59)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="myTest({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUE,ECONOMY CONVENIENCE, a...)">
-                  </a> <!-- myTest({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUE,ECONOMY CONVENIENCE, a...) -->
-                  <span class="method-name">myTest</span>
-                  <span class="parameters">({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUE,ECONOMY CONVENIENCE, airLine=Air India,Qatar Airways, Depart From=SIN, Going To=DXB, InfantsCount=1, ArrivalFilter=00 -06,18-00, DepartureFilter=00 -06,18-00, Stops=1 Stop,2 stops, SKIP=, Class=Economy, ChildrenCount=1})</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: Missing required property: execution_env
-	at com.iween.testBase.baseClass.getRequiredProperty(baseClass.java:98)
-	at com.iween.testBase.baseClass.setup(baseClass.java:59)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-iween_Test_Suite-class-skipped -->
+          </div> <!-- suite-iween_Test_Suite-class-passed -->
         </div> <!-- panel iween_Test_Suite -->
         <div panel-name="test-xml-iween_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -253,16 +260,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'myTest')
 data.setCell(0, 2, 'com.iween.OneWay.TCCP_1')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 131003);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'myTest')
 data.setCell(1, 2, 'com.iween.OneWay.TCCP_1')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 65213);
 window.suiteTableData['iween_Test_Suite']= { tableData: data, tableDiv: 'times-div-iween_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-iween_Test_Suite">
               </div> <!-- times-div-iween_Test_Suite -->
             </div> <!-- times-div -->
@@ -290,15 +297,31 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.iween.OneWay.TCCP_1</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setup(Windows, chrome, public void com.iween.OneWay.TCCP_1.myTest(java.util.Map) throws java.lang.Exceptio...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">myTest({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUEs,ECONOMY CONVENIENCEs,...)</span>
+                <span class="method-start">3460 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68673 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">30 ms</span>
+                <span class="method-name">setup(Windows, chrome, public void com.iween.OneWay.TCCP_1.myTest(java.util.Map) throws java.lang.Exceptio...)</span>
+                <span class="method-start">69234 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">myTest({AdultsCounts=1, RefundableInfo=Non-Refundable,Refundable, FareType=ECO VALUE,ECONOMY CONVENIENCE, a...)</span>
+                <span class="method-start">71766 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">202780 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

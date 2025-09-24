@@ -12,7 +12,7 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="myTest"/>
+          <include name="myTest" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.iween.OneWay.TCCP_1 -->
     </classes>
