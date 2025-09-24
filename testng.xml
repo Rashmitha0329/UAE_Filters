@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="iween Test Suite" thread-count="3" parallel="classes">
+    <parameter name="os" value="Windows" />
+    <parameter name="browser" value="chrome" />
+ 
+    <listeners>
+        <listener class-name="com.iween.utilities.ExtentReportManager"/>
+    </listeners>
+    <test name=" Search Tests">
+        <classes>
+        <class name="com.iween.OneWay.TCCP_1"/>
+        <class name="com.iween.OneWay.TCCP_2"/>
+        <class name="com.iween.OneWay.TCCP_3"/>
+        
+        <class name="com.iween.OneWay.TCCP_4"/>
+        
+        <!--class name="com.iween.RoundTripFilterTestcase1.TCCP_1"/>
+        <class name="com.iween.RoundTripFilterTestcase1.TCCP_2"/>
+        <class name="com.iween.RoundTripFilterTestcase1.TCCP_3"/>
+        <class name="com.iween.RoundTripFilterTestcase1.TCCP_4"/-->
+
+        </classes>
+    </test>
+ <test name="OneWay1">
+ <classes>
+ <!--class name="com.iween.searchtobookingsupplierwise.TCSBS_1_SearchToBookingKamairSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_2_SearchToBookingKamairSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_3_SearchToBookingKamairSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_4_SearchToBookingKamairSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_5_SearchToBookingAirarabiaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_6_SearchToBookingBiletbankSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_7_SearchToBookingBiletbankSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_8_SearchToBookingBiletbankSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_9_SearchToBookingflyarianaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_10_SearchToBookingflyarianaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_11_SearchToBookingflyarianaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_12_SearchToBookingflyarianaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_13_SearchToBookingEmiratesSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_14_SearchToBookingEmiratesSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_15_SearchToBookingEmiratesSupplier"/-->
+ </classes>
+ </test>
+ 
+ <test name="OneWay2">
+ <classes>
+ 
+ <!--class name="com.iween.searchtobookingsupplierwise.TCSBS_16_SearchToBookingAmadeusSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_17_SearchToBookingAmadeusSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_18_SearchToBookingAmadeusSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_19_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_20_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_21_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_22_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_23_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_24_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_25_SearchToBookingAirarabiaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_26_SearchToBookingAirarabiaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_27_SearchToBookingAirarabiaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_28_SearchToBookingAirarabiaSupplier"/-->
+ </classes>
+ 
+ </test>
+ 
+    <test name=" onway Tests">
+    <packages>
+      <!--package name="com.iween.searchtobookingsupplierwise"/-->
+      <!--package name="com.iween.searchtobookingsupplierwiseroundtrip"/-->
+      
+    </packages>
+    
+        <!--classes>
+        <class name="com.iween.testcase.TCCP_1"/>
+        <class name="com.iween.testcase.TCCP_2"/>
+        <class name="com.iween.testcase.TCCP_3"/>
+        <class name="com.iween.testcase.TCCP_4"/>
+        <class name="com.iween.testcase.TCCP_5"/>
+      
+        <class name="com.iween.testcase.TCCP_7"/>
+        <class name="com.iween.testcase.TCCP_8"/>
+        <class name="com.iween.testcase.TCCP_9"/>
+        <class name="com.iween.testcase.TCCP_10"/>
+        <class name="com.iween.testcase.TCCP_11"/>
+        <class name="com.iween.testcase.TCCP_12"/>
+         <class name="com.iween.testcaseRoundTrip.TCCPR_2"/>
+         <class name="com.iween.testcaseRoundTrip.TCCPR_3"/>
+         <class name="com.iween.testcaseRoundTrip.TCCPR_4"/-->
+                 <!--class name="com.iween.testcase.TCCP_11"/>
+        </classes-->
+    </test>
+    
+    
+    
+    
+    <!--test name="RoundTrip Test">
+    <classes>
+      <class name="com.iween.testcaseRoundTrip.TCCPR_4"/>
+    </classes>
+  </test-->
+  
+  <test  name="SearchToBookingOneWay">
+    <classes>
+<!--class name="com.iween.searchtobookingsupplierwise.TCSBS_1_SearchToBookingKamairSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_2_SearchToBookingKamairSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_3_SearchToBookingKamairSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_4_SearchToBookingKamairSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_5_SearchToBookingAirarabiaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_6_SearchToBookingBiletbankSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_7_SearchToBookingBiletbankSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_8_SearchToBookingBiletbankSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_9_SearchToBookingflyarianaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_10_SearchToBookingflyarianaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_11_SearchToBookingflyarianaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_12_SearchToBookingflyarianaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_13_SearchToBookingEmiratesSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_14_SearchToBookingEmiratesSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_15_SearchToBookingEmiratesSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_16_SearchToBookingAmadeusSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_17_SearchToBookingAmadeusSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_18_SearchToBookingAmadeusSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_19_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_20_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_21_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_22_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_23_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_24_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_25_SearchToBookingAirarabiaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_26_SearchToBookingAirarabiaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_27_SearchToBookingAirarabiaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwise.TCSBS_28_SearchToBookingAirarabiaSupplier"/-->
+ 
+ 
+ 
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="SearchToBookingRoundTrip">
+    <classes>
+<!--class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_1_SearchToBookingKamairSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_2_SearchToBookingKamairSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_3_SearchToBookingKamairSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_4_SearchToBookingKamairSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_5_SearchToBookingAirarabiaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_6_SearchToBookingBiletbankSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_7_SearchToBookingBiletbankSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_8_SearchToBookingBiletbankSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_9_SearchToBookingflyarianaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_10_SearchToBookingflyarianaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_11_SearchToBookingflyarianaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_12_SearchToBookingflyarianaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_13_SearchToBookingEmiratesSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_14_SearchToBookingEmiratesSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_15_SearchToBookingEmiratesSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_16_SearchToBookingAmadeusSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_17_SearchToBookingAmadeusSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_18_SearchToBookingAmadeusSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_19_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_20_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_21_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_22_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_23_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_24_SearchToBookingFlydubaiSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_25_SearchToBookingAirarabiaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_26_SearchToBookingAirarabiaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_27_SearchToBookingAirarabiaSupplier"/>
+<class name="com.iween.searchtobookingsupplierwiseroundtrip.TCSBS_28_SearchToBookingAirarabiaSupplier"/-->
+ 
+    </classes>
+  </test> <!-- Test -->
+</suite>
