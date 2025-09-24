@@ -8,32 +8,11 @@
   </listeners>
   <test thread-count="3" parallel="classes" name=" Search Tests(failed)">
     <classes>
-      <class name="com.iween.OneWay.TCCP_4">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="myTest" invocation-numbers="2 3 4 5 21 9 10 12 15"/>
-        </methods>
-      </class> <!-- com.iween.OneWay.TCCP_4 -->
-      <class name="com.iween.OneWay.TCCP_2">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="myTest" invocation-numbers="3 19 4 5 9 11"/>
-        </methods>
-      </class> <!-- com.iween.OneWay.TCCP_2 -->
-      <class name="com.iween.OneWay.TCCP_3">
-        <methods>
-          <include name="myTest" invocation-numbers="4 5"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.iween.OneWay.TCCP_3 -->
       <class name="com.iween.OneWay.TCCP_1">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="myTest" invocation-numbers="4 5"/>
+          <include name="myTest"/>
         </methods>
       </class> <!-- com.iween.OneWay.TCCP_1 -->
     </classes>
