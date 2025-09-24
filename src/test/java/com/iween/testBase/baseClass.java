@@ -48,9 +48,17 @@ public class baseClass {
 
         p = new Properties();
         FileReader file = new FileReader("./src/test/resources/config.properties");
+        if (file == null) {
+            logger.error("config.properties file not found at ./src/test/resources/");
+            throw new IllegalStateException("config.properties file is missing");
+        }
         p.load(file);
+        logger.info("Loaded config.properties file successfully.");
 
-        String env = p.getProperty("execution_env").toLowerCase();
+        // Use helper method to get required property with clear error if missing
+        String env = getRequiredProperty("execution_env").toLowerCase();
+        String appUrl = getRequiredProperty("applicationUrl");
+
         logger.info("Execution environment: " + env + " | OS: " + os + " | Browser: " + browser);
 
         switch (env) {
@@ -64,20 +72,32 @@ public class baseClass {
                 setupMachineDriver(browser);
                 break;
             default:
-                throw new IllegalArgumentException("Invalid execution_env in config.properties");
+                throw new IllegalArgumentException("Invalid execution_env in config.properties: " + env);
         }
 
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.manage().window().setSize(new org.openqa.selenium.Dimension(1920, 1080)); // ensure proper size in headless
-        driver.get(p.getProperty("applicationUrl"));
+        driver.get(appUrl);
 
-        logger.info("Launched URL: " + p.getProperty("applicationUrl"));
+        logger.info("Launched URL: " + appUrl);
 
         extent = ExtentManager.getExtentReports();
         ExtentManager.setTest(test);
         screenShots = new ScreenshotUtil();
         futureDates = new Iween_FutureDates();
+    }
+
+    /**
+     * Helper method to get required property from Properties object.
+     * Throws IllegalStateException if property is missing or empty.
+     */
+    private String getRequiredProperty(String key) {
+        String value = p.getProperty(key);
+        if (value == null || value.trim().isEmpty()) {
+            throw new IllegalStateException("Missing required property: " + key);
+        }
+        return value.trim();
     }
 
     private void setupRemoteDriver(String os, String browser) throws Exception {
@@ -163,7 +183,7 @@ public class baseClass {
     public void tearDown() {
         if (driver != null) {
             logger.info("Closing browser.");
-            //driver.quit();
+            driver.quit();
         }
     }
 }
